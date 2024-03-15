@@ -1,0 +1,52 @@
+<table class=" table table-striped table-dark">
+    <thead>
+        <tr class="text-center">
+            <th scope="col">EMP_ID</th>
+            <th scope="col">FIRSTNAME</th>
+            <th scope="col">LASTNAME</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">DATE_OF_BIRTH</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">ADDRESS</th>
+            <th scope="col">NATHONAL_ID</th>
+            <th scope="col">MARITAL_STATUS</th>
+            <th scope="col">EMEREGENCY_NAME</th>
+            <th scope="col">EMEREGENCY_PHONE</th>
+            <th scope="col">POSITION</th>
+            <th scope="col">SKILLSET</th>
+            <th scope="col">START_DATE</th>
+            <th scope="col">END_DATE</th>
+            <th scope="col">SALARY</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">ACC_NO</th>
+            <th scope="col">DEPARTMENT</th>
+            <th scope="col">MANAGER</th>
+            <th scope="col">ROLE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employee" class="text-center">
+            <td>{{emp.employeeId}}</td>
+            <td>{{emp.firstName}}</td>
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.dateOfBirth}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.phone}}</td>
+            <td>{{emp.nationalId}}</td>
+            <td>{{emp.maritalStatus}}</td>
+            <td>{{emp.emergencyContactName}}</td>
+            <td>{{emp.emergencyContactPhone}}</td>
+            <td>{{emp.position}}</td>
+            <td>{{emp.skillSet}}</td>
+            <td>{{emp.employmentStartDate}}</td>
+            <td>{{emp.employmentEndDate}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.employmentStatus}}</td>
+            <td>{{emp.bankAccountNumber}}</td>
+            <td>{{emp.department?.departmentName}}</td>
+            <td>{{emp.firstName}}</td>
+            <td>{{emp.role?.roleName}}</td>
+        </tr>
+    </tbody>
+</table>
